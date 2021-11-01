@@ -30,9 +30,9 @@ The baseline model utilized the features of health, age, and absences, which are
 To deploy our retrained model, follow these steps:
 <br></br>
 1. Clone our repository by running "git clone https://github.com/CMU-313/fall-2021-hw4-sleepygit"
-Change the directory into the git repository downloaded and subsequently into the dockerfile directory by running "cd fall-2021-hw4-sleepygit/dockerfile"
-Build the docker container by running "docker build -t ml:latest ."
-Run the docker container by running "docker run -d -p 5000:5000 ml"
-Finally, output the result by running "curl http://localhost:5000/predict"
+2. Change the directory into the git repository downloaded and subsequently into the dockerfile directory by running "cd fall-2021-hw4-sleepygit/dockerfile"
+3. Build the docker container by running "docker build -t ml:latest ."
+4. Run the docker container by running "docker run -d -p 5000:5000 ml"
+5. Finally, You can see the result when querying the micro service by opening a web browser and going to http://localhost:5000/predict and inputting the query values after the predict in the URL or you can output the result by running "curl http://localhost:5000/predict" and putting query values after predict as described in part (a). 
 
 (d) an explanation and justification of the testing you have done on it.
