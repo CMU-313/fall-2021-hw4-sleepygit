@@ -1,10 +1,6 @@
 # Software Engineering for Machine Learning Assignment
 
-Please consult the [homework assignment](https://cmu-313.github.io//assignments/hw4) for full context and instructions for this code.  
-
 (a) Clear documentation for your API. (How it should be called, what data it expects, any pre-conditions for the service, and how to understand the output).
-
-
 
 (b) A description of which features you used in training your model, and how your retrained the model performs better than the baseline model
 
