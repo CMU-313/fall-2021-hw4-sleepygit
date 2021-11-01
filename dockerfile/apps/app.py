@@ -12,11 +12,14 @@ def hello():
 @app.route('/predict')
 def predict():
 	 #use entries from the query string here but could also use json
-     age = request.args.get('age')
+     health = request.args.get('health')     
      absences = request.args.get('absences')
-     health = request.args.get('health')
-     data = [[age],[health],[absences]]
-     query_df = pd.DataFrame({ 'age' : pd.Series(age) ,'health' : pd.Series(health) ,'absences' : pd.Series(absences)})
+     freetime = request.args.get('freetime')
+     famrel = request.args.get('famrel')
+     studytime = request.args.get('studytime')
+     failures = request.args.get('failures')
+     data = [[health],[absences],[freetime],[famrel],[studytime],[failures]]
+     query_df = pd.DataFrame({ 'health' : pd.Series(health) ,'absences' : pd.Series(absences),'freetime' : pd.Series(freetime),'famrel' : pd.Series(famrel),'studytime' : pd.Series(studytime),'failures' : pd.Series(failures)})
      query = pd.get_dummies(query_df)
      prediction = clf.predict(query)
      return jsonify(np.asscalar(prediction))
