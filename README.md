@@ -64,7 +64,7 @@ To deploy our retrained model, follow these steps:
 <h2>(d) an explanation and justification of the testing you have done on it.</h2>
 To test the model, we have created a testing script using pytest that tests common cases as well as edge cases.
 1. We provide a query that has no arguments so we expect this to throw a ValueError exception. 
-2. We provide a valid query that is expected to output 0 and assert that our model returns this expected value. 
+2. We provide a valid query that is expected to output 0 and assert that our model returns this expected value.
 3. We provide a valid query that is expected to output 1 and assert that our model returns this expected value. 
 4. We provide an invalid query that has too few arguments (only the health requirement) and assert that our model throws a ValueError exception. 
 5. We provide an invalid query that has too many arguments (age is also included in this incorrect query) and assert that our model throws a ValueError exception.
