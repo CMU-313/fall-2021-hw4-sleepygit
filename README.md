@@ -1,6 +1,6 @@
 # Software Engineering for Machine Learning Assignment
 
-(a) Clear documentation for your API. (How it should be called, what data it expects, any pre-conditions for the service, and how to understand the output).
+<h2>(a) Clear documentation for your API. (How it should be called, what data it expects, any pre-conditions for the service, and how to understand the output).</h2>
 
 <u><b>How the model should be called: </b></u>
 <br></br>
@@ -22,11 +22,11 @@ No pre-conditions for calling this microservice except that the data is within t
 <br></br>
 It should return a binary value where 1 means that the student is a quality student and 0 means that they are not a quality student
 
-(b) A description of which features you used in training your model, and how your retrained the model performs better than the baseline model
+<h2>(b) A description of which features you used in training your model, and how your retrained the model performs better than the baseline model</h2>
 
 For our model, we are utilizing the features of health, absences, failures, studytime, freetime, family relations, family educational support, school educational support, workday alcohol consumption, and weekend alcohol consumption. 
 <br></br>
-<b><u>Description of features:<b><u>
+<b><u>Description of features:</b></u>
 <br></br>
 Health (health) - current health status (where 1 = very bad and 5 = very good)
 <br></br>
@@ -52,7 +52,7 @@ Weekend alchohol consumption (Walc) - how much alcohol they consume on a weekend
 <br></br>
 The baseline model utilized the features of health, age, and absences, which aren't necessarily the best indicators of performance success in graduate programs. Thus, we retrained our model utilizing what we thought might be better indicators such as their health (they could possibly not do as well if unhealthy), absences (if they miss class a lot, they are bound to do worse), failures (if they have failed in the past, they are more likely to fail), study time (if they study more, then they will tend to do better), free time (less free time is less time to focus on their studies), family relationships (this might be a distractor if its bad), family educaitonal support (support from their family will help them to perform better generally), school educational support (extra support from their school will help them to perform better generally), workday alcohol consumption (if they drink a lot, they are less likely to be using their time wisely), and weekend alcohol consumption (if they drink a lot, they are less likely to be using their time wisely). Our retrained model still uses the random forest classifier. However, we have much better performance in terms of prediction. Our model had an accuracy of 99% on the training set and 82% on test set and the baseline model had an accuracy of 87% on the training set and 73% on the test set. 
 
-(c) deployment instructions
+<h2>(c) deployment instructions </h2>
 
 To deploy our retrained model, follow these steps:
 1. Clone our repository by running "git clone https://github.com/CMU-313/fall-2021-hw4-sleepygit"
@@ -61,4 +61,4 @@ To deploy our retrained model, follow these steps:
 4. Run the docker container by running "docker run -d -p 5000:5000 ml"
 5. Finally, You can see the result when querying the micro service by opening a web browser and going to http://localhost:5000/predict and inputting the query values after the predict in the URL or you can output the result by running "curl http://localhost:5000/predict" and putting query values after predict as described in part (a). 
 
-(d) an explanation and justification of the testing you have done on it.
+<h2>(d) an explanation and justification of the testing you have done on it.</h2>
