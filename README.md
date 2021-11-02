@@ -62,13 +62,12 @@ To deploy our retrained model, follow these steps:
 5. Finally, You can see the result when querying the micro service by opening a web browser and going to http://localhost:5000/predict and inputting the query values after the predict in the URL or you can output the result by running "curl http://localhost:5000/predict" and putting query values after predict as described in part (a). 
 
 <h2>(d) an explanation and justification of the testing you have done on it.</h2>
-<br></br>
 To test the model, we have created a testing script using pytest that tests common cases as well as edge cases.
-Test 1: We provide a query that has no arguments so we expect this to throw a ValueError exception. 
-Test 2: We provide a valid query that is expected to output 0 and assert that our model returns this expected value. 
-Test 3: We provide a valid query that is expected to output 1 and assert that our model returns this expected value. 
-Test 4: We provide an invalid query that has too few arguments (only the health requirement) and assert that our model throws a ValueError exception. 
-Test 5: We provide an invalid query that has too many arguments (age is also included in this incorrect query) and assert that our model throws a ValueError exception.
+1. We provide a query that has no arguments so we expect this to throw a ValueError exception. 
+2. We provide a valid query that is expected to output 0 and assert that our model returns this expected value. 
+3. We provide a valid query that is expected to output 1 and assert that our model returns this expected value. 
+4. We provide an invalid query that has too few arguments (only the health requirement) and assert that our model throws a ValueError exception. 
+5. We provide an invalid query that has too many arguments (age is also included in this incorrect query) and assert that our model throws a ValueError exception.
 <br></br>
 We also tested our model by splitting the data set into a training and testing set (80/20). We trained our updated model with the training data set and obtained an accuracy score of roughly 99% which is expected. Then we ran our model on the test set and obtained an 82% accuracy which implies that our model is correctly predicting the student’s success in graduate school with an acceptable level of accuracy.
 <br></br>
