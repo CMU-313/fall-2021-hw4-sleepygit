@@ -10,7 +10,7 @@ where one replaces any "{value}" statements with the corresponding query value f
 
 Expected Data:
 <br></br>
-It expects data based on the health of the student, the number of absences of the student, the study time of the student (on a scale of 1 to 5), the free time of the student (on a scale of 1 to 5), the quality of the family relationships of the student (on a scale of 1 to 5), and the number of failures of past classes of the student (0 to 3 if n <=3, 4 otherwise). 
+It expects data based on the health of the student, the number of absences of the student, the study time of the student (on a scale of 1 to 5), the free time of the student (on a scale of 1 to 5), the quality of the family relationships of the student (on a scale of 1 to 5), the number of failures of past classes of the student (0 to 3 if n <=3, 4 otherwise), the family educational support of the student (yes or no), the extra educational support provided by the school fo the student (yes or no), the workday alchol consumption of the student (on a scale of 1 to 5), and the weekend alcohol consumption of the student (on a scale of 1 to 5). 
 
 Pre-conditions for Service:
 <br></br>
