@@ -5,7 +5,9 @@
 How it should be called:
 <br></br>
 To call the model, you will go to this link on a browser or curl on the terminal with the following syntax: 
+<br></br>
 "http://localhost:5000/predict?health={value}&absences={value}&studytime={value}&freetime={value}&famrel={value}&failures={value}&famsup={value}&schoolsup={value}&Dalc={value}&Walc={value}"
+<br></br>
 where one replaces any "{value}" statements with the corresponding query value for the feature.
 
 Expected Data:
@@ -53,7 +55,6 @@ The baseline model utilized the features of health, age, and absences, which are
 (c) deployment instructions
 
 To deploy our retrained model, follow these steps:
-<br></br>
 1. Clone our repository by running "git clone https://github.com/CMU-313/fall-2021-hw4-sleepygit"
 2. Change the directory into the git repository downloaded and subsequently into the dockerfile directory by running "cd fall-2021-hw4-sleepygit/dockerfile"
 3. Build the docker container by running "docker build -t ml:latest ."
