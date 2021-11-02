@@ -2,7 +2,7 @@
 
 (a) Clear documentation for your API. (How it should be called, what data it expects, any pre-conditions for the service, and how to understand the output).
 
-How it should be called:
+<u><b>How the model should be called: </b></u>
 <br></br>
 To call the model, you will go to this link on a browser or curl on the terminal with the following syntax: 
 <br></br>
